@@ -23,7 +23,7 @@ class _BottomBarState extends State<BottomBar> {
     home_screen_widget(),
     explore_screen(),
     Course_screen(),
-    profile_screen(),
+    ProfileScreen(),
     
   ];
 
