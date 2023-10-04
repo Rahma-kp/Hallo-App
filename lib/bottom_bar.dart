@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hallo/Screens_widget/explorepage.dart';
 import 'package:hallo/Screens_widget/screen_course.dart';
-import 'package:hallo/Screens_widget/screen_explore_two.dart';
 import 'package:hallo/Screens_widget/screen_profile.dart';
-import 'package:hallo/Screens_widget/scrren_home.dart';
+import 'package:hallo/Screens_widget/screen_home.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key});
@@ -21,7 +21,7 @@ class _BottomBarState extends State<BottomBar> {
   }
   final page=[
     home_screen_widget(),
-    explore_screen_one(),
+    explore_screen(),
     Course_screen(),
     profile_screen(),
     

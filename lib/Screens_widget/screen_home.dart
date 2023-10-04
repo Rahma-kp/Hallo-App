@@ -21,11 +21,7 @@ class _home_screen_widgetState extends State<home_screen_widget> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
-          leading: IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.flag),
-            color: Colors.black,
-          ),
+          leading:Image.asset("assets/images/flag_uk.png",),
           actions: [
             IconButton(
                 onPressed: () {},
@@ -65,11 +61,11 @@ class _home_screen_widgetState extends State<home_screen_widget> {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                   studentrow(image:"assets/images/teacher1.jpeg", name: "Farseena"),
+                   studentrow(image:"assets/images/person1.jpeg", name: "Alen"),
                    studentrow(image:"assets/images/adil.png", name: "Adil"),
-                   studentrow(image:"assets/images/teacher1.jpeg", name: "Arjun"),
-                    studentrow(image:"assets/images/teacher1.jpeg", name: "Aksha"),
-                    studentrow(image:"assets/images/teacher1.jpeg",name: "Rahma"),
+                   studentrow(image:"assets/images/person2.jpeg", name: "Mariya"),
+                    studentrow(image:"assets/images/person3.jpeg", name: "jhone"),
+                    studentrow(image:"assets/images/person4.jpeg",name: "Rebekka"),
                    studentrow(image: "assets/images/aysha.jpg", name: "Aysha")
                   ],
                 ),
@@ -78,7 +74,7 @@ class _home_screen_widgetState extends State<home_screen_widget> {
               Column(
                 children: [
                   ListTile(
-                    leading: Icon(Icons.person),
+                    leading: CircleAvatar(radius: 30,backgroundImage:AssetImage("assets/images/caller1.png") ,),
                     title: Text(
                       "InstaLesson",
                       style: TextStyle(fontWeight: FontWeight.bold),
@@ -95,7 +91,7 @@ class _home_screen_widgetState extends State<home_screen_widget> {
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     subtitle: Text("Unlimited practice with other studets"),
-                    leading: Icon(Icons.person),
+                    leading: CircleAvatar(radius: 30,backgroundImage: AssetImage("assets/images/caller2.jpeg"),),
                     trailing: Text(
                       "Free",
                       style: TextStyle(fontWeight: FontWeight.bold),
